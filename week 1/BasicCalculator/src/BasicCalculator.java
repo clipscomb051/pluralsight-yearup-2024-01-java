@@ -11,50 +11,44 @@ public class BasicCalculator {
         double totalNum;
 
 
-
         //input
         System.out.println("First Number");
         firstNumber = userInput.nextInt();
         System.out.println("Second Number");
         secondNumber = userInput.nextInt();
-        System.out.println("Please select operation: ");
-        type = userInput.nextLine();
+        userInput.nextLine();
 
 
         System.out.println("(A)dd");
         System.out.println("(s)ubtract");
         System.out.println("(m)ultiply");
         System.out.println("(d)ivide");
+        System.out.println("Please select operation: ");
+        type = userInput.nextLine();
 
 
-        if (type.equalsIgnoreCase("")) {
+        if (type.equalsIgnoreCase("A")) {
             totalNum = firstNumber + secondNumber;
-            System.out.println("Order total: $" + totalNum);}
-
-
-     if (type.equalsIgnoreCase("")) {
-        totalNum = firstNumber - secondNumber;
-        System.out.println("Order total: $" + totalNum);
-     }
-
-     if (type.equalsIgnoreCase("")) {
-        totalNum = firstNumber * secondNumber;
-        System.out.println("Order total: $" + totalNum);
-    }
-     if (type.equalsIgnoreCase("")) {
-           totalNum =(firstNumber / secondNumber);
             System.out.println("Order total: $" + totalNum);
         }
 
-}}
+
+        if (type.equalsIgnoreCase("s")) {
+            totalNum = firstNumber - secondNumber;
+            System.out.println("Order total: $" + totalNum);
+        }
+
+        if (type.equalsIgnoreCase("m")) {
+            totalNum = firstNumber * secondNumber;
+            System.out.println("Order total: $" + totalNum);
+        }
+        if (type.equalsIgnoreCase("d")) {
+            totalNum = (firstNumber / secondNumber);
+            System.out.println("Order total: $" + totalNum);
+        }
+
+    }
+}
 
 
-
-
-
-
-
-
-
-
-        //System.out.println("Answer");
+//System.out.println("Answer");
