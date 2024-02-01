@@ -20,9 +20,9 @@ public class BasicCalculator {
 
 
         System.out.println("(A)dd");
-        System.out.println("(s)ubtract");
-        System.out.println("(m)ultiply");
-        System.out.println("(d)ivide");
+        System.out.println("(S)ubtract");
+        System.out.println("(M)ultiply");
+        System.out.println("(D)ivide");
         System.out.println("Please select operation: ");
         type = userInput.nextLine();
 
